@@ -7,7 +7,9 @@ export * from "./Loading..";
 export * from "./LastRecords";
 export * from "./IncomeChart";
 export * from "./IncomeExpense";
-export * from "./Header";
-export * from "./Card";
-export * from "./AddRecIncome";
-export * from "./AddRecExpense";
+
+export * from "./layout/Header";
+export * from "./layout/Card";
+export * from "./layout/incomeAmount";
+
+export * from "./ChartPage";
