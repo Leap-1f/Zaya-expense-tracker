@@ -1,14 +1,15 @@
 import { useState, useEffect } from "react";
+import { Loading } from "./Loading..";
 
 export const LogIn = () => {
   const [signUp, setSignUp] = useState(false);
 
   const handleSignUp = () => {
-    setSignUp(true)
-  }
+    setSignUp(true);
+  };
   const handleLogIn = () => {
-    setSignUp(false)
-  }
+    setSignUp(false);
+  };
   return (
     <div>
       {!signUp && (
@@ -40,7 +41,9 @@ export const LogIn = () => {
           </div>
           <div className="flex">
             <p>Don't have account?</p>
-            <button onClick={handleSignUp} className="text-[#0166FF] px-[12px]">Sign up{" "}</button>
+            <button onClick={handleSignUp} className="text-[#0166FF] px-[12px]">
+              Sign up{" "}
+            </button>
           </div>
         </div>
       )}
@@ -83,7 +86,9 @@ export const LogIn = () => {
           </div>
           <div className="flex">
             <p>Already have account?</p>
-            <button onClick={handleLogIn} className="text-[#0166FF] px-[12px]">Log in</button>
+            <button onClick={handleLogIn} className="text-[#0166FF] px-[12px]">
+              Log in
+            </button>
           </div>
         </div>
       )}
