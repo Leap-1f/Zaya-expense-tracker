@@ -4,9 +4,9 @@ export const ChartPage = () => {
   return (
     <div>
       <Header />
-      <div className=" bg-[#F3F4F6] px-[100px] py-[50px] flex">
+      <div className=" bg-[#F3F4F6] px-[150px] py-[50px] flex gap-[40px]">
         <Card />
-        <IncomeAmount/>
+        <IncomeAmount />
       </div>
     </div>
   );

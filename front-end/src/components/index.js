@@ -6,10 +6,10 @@ export * from "./Records";
 export * from "./Loading..";
 export * from "./LastRecords";
 export * from "./IncomeChart";
-export * from "./IncomeExpense";
+export * from "./IncomeExpenseChart";
 
 export * from "./layout/Header";
 export * from "./layout/Card";
-export * from "./layout/incomeAmount";
+export * from "./layout/IncomeAmount";
 
 export * from "./ChartPage";
