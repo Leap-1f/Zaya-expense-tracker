@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Loading } from "./Loading..";
 
-export const LogIn = () => {
+export default function LogInSignup ()  {
   const [signUp, setSignUp] = useState(false);
 
   const handleSignUp = () => {
