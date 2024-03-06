@@ -1,25 +1,10 @@
-import {
-  LogIn,
-  StepBody,
-  Steps,
-  Selects,
-  Records,
-  Loading,
-  LastRecords,
-  IncomeChart,
-  IncomeAmount,
-  Header,
-  CreateAcc,
-  Card,
-  AddRecIncome,
-  AddRecExpense,
-} from "@/components";
+import LogInSignup from "@/components/LogInSignup";
 
 export default function Home() {
   return (
     <div className="flex h-[100vh]">
       <div className="w-1/2 flex justify-center items-center">
-        <LogIn />
+        <LogInSignup />
       </div>
       <div className="w-1/2 bg-[#0166FF]"></div>
     </div>

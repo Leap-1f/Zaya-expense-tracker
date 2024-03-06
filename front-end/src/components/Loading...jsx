@@ -1,4 +1,4 @@
-export const Loading = () => {
+export default function Loading() {
   return (
     <div className="flex justify-center items-center">
       <div className="w-[172px] h-[184px] flex flex-col gap-[48px]">
@@ -13,4 +13,4 @@ export const Loading = () => {
       </div>
     </div>
   );
-};
+}

@@ -3,7 +3,9 @@ export const Card = () => {
     <div className="card-body bg-blue-700 rounded-lg h-[220px] p-[32px] justify-between">
       <div className="flex p-[6px] w-[92px] h-[35px] justify-between">
         <img src="Vector (1).png" alt="" />
-        <div className="font-bold text-[20px] flex items-center text-white">Geld</div>
+        <div className="font-bold text-[20px] flex items-center text-white">
+          Geld
+        </div>
       </div>
       <div className=" flex justify-between">
         <div>
