@@ -1,9 +1,14 @@
-import DashFirstPage from "@/components/DashFirstPage"
+import { CashCard } from "@/components/dashboard/CashCard";
+import { Navbar } from "@/components/layout/Navbar";
+import { useRouter } from "next/router";
 
 export default function Home() {
+  const { push } = useRouter();
+
   return (
-    <div className="h-[100vh]">
-      <DashFirstPage />
+    <div>
+      <Navbar />
+      <CashCard />
     </div>
   );
 }

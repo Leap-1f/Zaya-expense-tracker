@@ -1,37 +1,19 @@
 import express from "express";
-import { sql } from "./config/database.js";
+import cors from "cors";
+import {user} from "./src/router/user.js";
+import { transaction } from "./src/router/transaction.js";
+import { category } from "./src/router/category.js";
+import bcrypt from "bcrypt";
 
 const app = express();
 app.use(express.json());
+app.use(cors());
 const port = 8080;
 
-app.use("users", user);
-
-app.get("/users", async (req, res) => {
-  const data = await sql`SELECT * FROM users`;
-  console.log(data);
-  res.send(data);
-});
-app.post("/users/createTable", async (req, res) => {
-  const data =
-    await sql`CREATE TABLE users (id SERIAL PRIMARY KEY, name TEXT NOT NULL, email TEXT NOT NULL)`;
-  data.push(req.body);
-  res.send(data);
-});
-app.post("/users", async (req, res) => {
-  const data = await sql`SELECT * FROM users`;
-  const newData =
-    await sql`INSERT INTO users(name, email) VALUES('zul', 'zol') RETURNING *`;
-  data.push(newData);
-  res.send(data);
-});
-
-app.delete("/users", async (req, res) => {
-  const data = await sql`DROP TABLE users`;
-  console.log(data);
-  res.send(data);
-});
+app.use("/api/", user);
+app.use("/api/category", category);
+app.use("/api/transaction", transaction);
 
 app.listen(port, () => {
-  console.log(`ene port ${port}`);
+  console.log(`ene port deer server aslaa ${port}`);
 });
