@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { Geld } from "../utils/IconGeld";
 import { useRouter } from "next/router";
-import { loginSchema, signUpSchema } from "./validationSchema";
+import { loginSchema, signUpSchema } from "./ValidationSchema";
 import { useFormik, FormikProvider } from "formik";
 import { Context } from "../utils/context";
 

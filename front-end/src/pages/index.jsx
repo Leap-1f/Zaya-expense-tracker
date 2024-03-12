@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import { LogIn } from "@/components/login";
+import { LogIn } from "@/components/logIn/Index";
 //  npx vercel --prod
 
 // const inter = Inter({ subsets: ["latin"] });

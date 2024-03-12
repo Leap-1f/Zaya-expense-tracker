@@ -1,6 +1,6 @@
-export * from "./step-one";
-export * from "./step-two";
-export * from "./step-three";
+export * from "./StepOne";
+export * from "./StepTwo";
+export * from "./StepThree";
 
 export function Stepper({ currentStep, numberOfSteps }) {
     let number = 1;

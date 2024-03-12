@@ -1,4 +1,4 @@
-import { Vector } from "../utils/iconGeld";
+import { Vector } from "../utils/IconGeld";
 import { AddRecord } from "../Modal";
 import Link from "next/link";
 
@@ -11,7 +11,9 @@ export const Navbar = () => {
           <Link href="/dashboard" className="active:scale-95 transition">
             Dashboard
           </Link>
-          <Link href="/record" className="active:scale-95 transition">Records</Link>
+          <Link href="/records" className="active:scale-95 transition">
+            Records
+          </Link>
         </div>
         <div className="flex-none items-center gap-6">
           <label

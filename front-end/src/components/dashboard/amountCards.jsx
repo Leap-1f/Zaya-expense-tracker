@@ -1,7 +1,7 @@
 import { CardShape, PayWave } from "../utils/iconSvg";
-import { WhiteGeld } from "../utils/iconGeld";
+import { WhiteGeld } from "../utils/IconGeld";
 import { ArrowCircleUp, EllipseGreen, EllipseBlue } from "../utils/iconSvg";
-import { CashCard } from "./cashCard";
+import { CashCard } from "./CashCard";
 
 export const AmountCards = () => {
   return (
