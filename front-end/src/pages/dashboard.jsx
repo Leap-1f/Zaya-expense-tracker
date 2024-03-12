@@ -1,5 +1,4 @@
 import {
-  CashCard,
   AmountCards,
   Charts,
   LastRecords,

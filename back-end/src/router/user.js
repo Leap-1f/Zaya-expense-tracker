@@ -1,5 +1,12 @@
 import { Router } from "express";
-import { getAllUsers, createTable, dropTable, postUser, login, signin, } from "../../back-end/src/controller/user.js";
+import {
+  getAllUsers,
+  createTable,
+  dropTable,
+  postUser,
+  login,
+  signin,
+} from "../controller/user.js";
 
 const user = Router();
 
