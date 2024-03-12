@@ -99,10 +99,10 @@ export const LogIn = () => {
     <div className="flex *:w-1/2 *:h-[100vh]">
       <div className="bg-white flex justify-center items-center">
         {!signUp && (
-          <div className="flex flex-col items-center gap-7">
+          <div className="flex flex-col items-center gap-[40px] w-[384px]">
             <Geld width="94" heigth="36"></Geld>
             <div className="*:text-center">
-              <h3 className="mb-3 font-bold">Welcome Back</h3>
+              <h3 className="mb-3 font-bold text-[24px]">Welcome Back</h3>
               <p>Welcome back, Please enter your details</p>
             </div>
             <FormikProvider value={formikLogIn}>
@@ -115,7 +115,7 @@ export const LogIn = () => {
                   onChange={formikLogIn.handleChange}
                   type="text"
                   placeholder="Email"
-                  className="input input-bordered w-full max-w-xs"
+                  className="input input-bordered w-full"
                   name="email"
                   value={formikLogIn.values.email}
                 />
@@ -128,7 +128,7 @@ export const LogIn = () => {
                   onChange={formikLogIn.handleChange}
                   type="text"
                   placeholder="Password"
-                  className="input input-bordered w-full max-w-xs"
+                  className="input input-bordered w-full"
                   name="password"
                   value={formikLogIn.values.password}
                 />
@@ -159,10 +159,10 @@ export const LogIn = () => {
           </div>
         )}
         {signUp && (
-          <div className="flex flex-col items-center gap-7">
+          <div className="flex flex-col items-center gap-[40px] w-[384px]">
             <Geld width="94" heigth="36"></Geld>
             <div className="*:text-center">
-              <h3 className="mb-3 font-bold">Create Geld account</h3>
+              <h3 className="mb-3 font-bold text-[24px]">Create Geld account</h3>
               <p>Sign up below to create your Wallet account</p>
             </div>
             <FormikProvider value={formikSignUp}>
@@ -176,7 +176,7 @@ export const LogIn = () => {
                   type="text"
                   placeholder="Name"
                   onChange={formikSignUp.handleChange}
-                  className="input input-bordered w-full max-w-xs"
+                  className="input input-bordered w-full"
                   name="name"
                   value={formikSignUp.values.name}
                 />
@@ -189,7 +189,7 @@ export const LogIn = () => {
                   onChange={formikSignUp.handleChange}
                   type="text"
                   placeholder="Email"
-                  className="input input-bordered w-full max-w-xs"
+                  className="input input-bordered w-full"
                   name="email"
                 />
                 {formikSignUp.errors.email && formikSignUp.touched.email ? (
@@ -201,7 +201,7 @@ export const LogIn = () => {
                   onChange={formikSignUp.handleChange}
                   type="text"
                   placeholder="Password"
-                  className="input input-bordered w-full max-w-xs"
+                  className="input input-bordered w-full"
                   name="password"
                 />
                 {formikSignUp.errors.password &&
@@ -214,7 +214,7 @@ export const LogIn = () => {
                   onChange={formikSignUp.handleChange}
                   type="text"
                   placeholder="Re-password"
-                  className="input input-bordered w-full max-w-xs"
+                  className="input input-bordered w-full"
                   name="rePassword"
                 />
                 {formikSignUp.errors.rePassword &&
@@ -227,7 +227,7 @@ export const LogIn = () => {
                   <p className="text-red-500 text-xs">{warningMessage}</p>
                 )}
                 <button type="submit" className="btn btn-primary w-full">
-                  Sign in
+                  Sign up
                 </button>
               </form>
             </FormikProvider>

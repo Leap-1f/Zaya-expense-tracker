@@ -9,7 +9,7 @@ export const CashCard = () => {
           <WhiteGeld width="80" height="30"/>
           <div>
             <p className="text-gray-300">Cash</p>
-            <p className="text-xl text-white">10k</p>
+            <p className="text-xl text-white">100k</p>
           </div>
         </div>
         <div className="absolute z-2 bottom-0 right-0">
