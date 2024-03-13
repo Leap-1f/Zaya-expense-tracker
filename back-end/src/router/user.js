@@ -1,18 +1,16 @@
 import { Router } from "express";
-import {
-  getAllUsers,
-  createTable,
-  dropTable,
-  postUser,
-  login,
-  signin,
-} from "../controller/user.js";
+import { newUser, logIn, signin } from "../controller/user.js";
 
 const user = Router();
 
-user.route("/login").post(login);
-user.route("/signin").post(signin);
-user.route("/signup").get(getAllUsers).post(postUser);
-user.route("/user/table").post(createTable).delete(dropTable);
+user.route("/signup").post(newUser);
+user.route("/login").post(logIn);
 
 export { user };
+
+// user.route("/login").post(login);
+user.route("/signin").post(signin);
+// user.route("/signup").post(postUser);
+// user.route("/user/table").post(createTable).delete(dropTable);
+
+// export { user };
