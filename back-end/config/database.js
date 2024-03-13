@@ -1,13 +1,7 @@
-// app.js
-
 import postgres from "postgres";
 import dotenv from "dotenv";
 
 dotenv.config();
-
-// console.log(process.env.PGDATABASE);
-
-// let { PGHOST, PGDATABASE, PGUSER, PGPASSWORD, ENDPOINT_ID } = process.env;
 
 const PGHOST = "ep-gentle-paper-a5ehqtdl.us-east-2.aws.neon.tech";
 const PGDATABASE = "neondb";
@@ -26,3 +20,10 @@ export const sql = postgres({
     options: `project=${ENDPOINT_ID}`,
   },
 });
+
+// async function getPgVersion() {
+//   const result = await sql`select version()`;
+//   console.log(result);
+// }
+
+// getPgVersion();
