@@ -19,15 +19,36 @@ export const Records = () => {
         <h1 className="font-bold">Types</h1>
         <div className="flex flex-col gap-[5px] pl-[10px] pt-[10px]">
           <div className="flex gap-[10px] items-center">
-            <div className="w-[20px] h-[20px] rounded-full border-2"></div>
+            <div className="form-control">
+              <label className="label cursor-pointer">
+                <input
+                  type="checkbox"
+                  className="checkbox checkbox-primary rounded-full"
+                />
+              </label>
+            </div>
             <p>All</p>
           </div>
           <div className="flex gap-[10px] items-center">
-            <div className="w-[20px] h-[20px] rounded-full border-2"></div>
+            <div className="form-control">
+              <label className="label cursor-pointer">
+                <input
+                  type="checkbox"
+                  className="checkbox checkbox-primary rounded-full"
+                />
+              </label>
+            </div>
             <p>Income</p>
           </div>
           <div className="flex gap-[10px] items-center">
-            <div className="w-[20px] h-[20px] rounded-full border-2"></div>
+            <div className="form-control">
+              <label className="label cursor-pointer">
+                <input
+                  type="checkbox"
+                  className="checkbox checkbox-primary rounded-full"
+                />
+              </label>
+            </div>
             <p>Expense</p>
           </div>
         </div>

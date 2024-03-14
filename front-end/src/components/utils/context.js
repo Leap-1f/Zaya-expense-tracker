@@ -1,5 +1,10 @@
 import { createContext } from "react";
 import { useState } from "react";
+import number from "yup";
+
+import { createContext } from "react";
+import { useState } from "react";
+
 
 export const Context = createContext([]);
 export const ContextProvider = ({ children }) => {
@@ -9,7 +14,7 @@ export const ContextProvider = ({ children }) => {
     email: "",
     password: "",
     currencyType: "MNT",
-    amount: 0,
+    balance: Num
   });
   const startLoading = () => {
     setIsLoading(true);
