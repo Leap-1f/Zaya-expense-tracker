@@ -7,20 +7,20 @@ export const AddRecord = () => {
   };
   return (
     <div className="modal" role="dialog">
-      <div className="modal-box min-w-[700px] relative">
+      <div className="modal-box min-w-[700px]">
         <div className="modal-action absolute right-4 top-0">
           <label
             htmlFor="my_modal_6"
-            className="btn btn-sm btn-circle btn-ghost "
+            className="btn btn-sm btn-ghost "
           >
             ✕
           </label>
         </div>
         <h3 className="font-bold text-lg mb-3 ">Add Record</h3>
         <div className="flex gap-10 border-t py-3">
-          <div className="flex flex-col gap-5 w-1/2">
+          <div className="flex flex-col gap-5">
             <div className="relative w-[full] h-10">
-              <div className="bg-[#e4e4e4] w-full h-full rounded-[20px]"></div>
+              <div className="bg-[#e4e4e4] w-full h-full rounded-[2q0px]"></div>
               <div className="absolute top-0 left-0 z-1 w-full h-full">
                 <div className="flex mb-9 overflow-hidden w-full h-full ">
                   <input
