@@ -5,7 +5,7 @@ import { CashCard } from "./CashCard";
 
 export const AmountCards = () => {
   return (
-    <div className="xl:flex xl:justify-between w-full gap-[40px] flex-wrap justify-center">
+    <div className="flex-wrap justify-between lg:flex-row lg:justify-between gap-[20px]">
       <CashCard />
       <div className="flex flex-col">
         <div className="w-[386px] h-[56px] bg-white rounded-t-xl flex  items-center px-[24px]">
