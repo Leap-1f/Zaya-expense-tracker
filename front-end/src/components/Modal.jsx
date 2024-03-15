@@ -1,22 +1,25 @@
-import React, { useState } from "react";
-export const AddRecord = () => {
-  const [selectedValue, setSelectedValue] = useState("expense");
+// import React, { useState } from "react";
+// export const AddRecord = () => {
+//   const [selectedValue, setSelectedValue] = useState("expense");
 
-  const handleChange = (event) => {
-    setSelectedValue(event.target.value);
-  };
-  return (
-    <dialog id="my_modal_3" className="modal">
-      <div className="modal-box">
-        <form method="dialog">
-          <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
-            ✕
-          </button>
-        </form>
-        <h3 className="font-bold text-lg">Add Record</h3>
-        <p className="py-4">Press ESC key or click on ✕ button to close</p>
-      </div>
-    </dialog>
+  // const handleChange = (event) => {
+  //   setSelectedValue(event.target.value);
+  // };
+  // return (
+
+    // <dialog id="my_modal_3" className="modal">
+    //   <div className="modal-box">
+    //     <form method="dialog">
+    //       <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+    //         ✕
+    //       </button>
+    //     </form>
+    //     <h3 className="font-bold text-lg">Add Record</h3>
+    //     <p className="py-4">Press ESC key or click on ✕ button to close</p>
+    //   </div>
+    // </dialog>
+
+
     // <div className="modal" role="dialog">
     //   <div className="modal-box min-w-[700px]">
     //     <div className="modal-action absolute right-4 top-0">
@@ -150,5 +153,7 @@ export const AddRecord = () => {
     //     </div> */}
     //   </div>
     // </div>
-  );
-};
+
+
+//   );
+// };
