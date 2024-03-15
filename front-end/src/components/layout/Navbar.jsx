@@ -16,12 +16,9 @@ export const Navbar = () => {
           </Link>
         </div>
         <div className="flex-none items-center gap-6">
-          <label
-            htmlFor="my_modal_6"
-            className="btn btn-primary btn-sm rounded-full"
-          >
+        <button className="btn btn-primary btn-sm rounded-full" onClick={()=>document.getElementById('my_modal_3').showModal()}>
             + Record
-          </label>
+          </button>
           <input type="checkbox" id="my_modal_6" className="modal-toggle" />
           <AddRecord></AddRecord>
           <div className="dropdown dropdown-end">
