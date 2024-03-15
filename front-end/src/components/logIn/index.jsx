@@ -1,10 +1,11 @@
 import { Geld } from "../utils/IconGeld";
 import Link from "next/link";
+import { useState, useEffect } from "react";
 
 export const LogIn = () => {
   return (
-    <div className="flex *:w-1/2 *:h-[100vh]">
-      <div className="bg-white flex justify-center items-center">
+    <div className="flex lg: *:w-1/2 *:h-[100vh] justify-center items-center">
+      <div className="bg-white lg:flex w-[100vw] justify-center items-center pt-[100px]">
         <div className="flex flex-col items-center gap-[40px] w-[384px]">
           <Geld width="94" heigth="36"></Geld>
           <div className="*:text-center">
@@ -32,13 +33,13 @@ export const LogIn = () => {
             <p>
               Dont have account?{" "}
               <Link href="/signup">
-                <span className="text-blue-700 cursor-pointer">Sign up </span>
+                <span className="text-blue-700 cursor-pointer">Sign up</span>
               </Link>
             </p>
           </div>
         </div>
       </div>
-      <div className="bg-blue-800"></div>
+      <div className="bg-blue-800 lg:flex hidden"></div>
     </div>
   );
 };
