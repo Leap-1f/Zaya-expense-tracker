@@ -38,9 +38,11 @@ export const SignUp = () => {
               className="input input-bordered bg-slate-200"
               name="rePassword"
             />
-            <button type="submit" className="btn btn-primary">
-              Sign up
-            </button>
+            <Link href="/dashboard">
+              <button type="submit" className="btn btn-primary w-full">
+                Sign up
+              </button>
+            </Link>
           </div>
           <div>
             <p>

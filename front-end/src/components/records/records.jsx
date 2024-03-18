@@ -18,7 +18,18 @@ export const Records = () => {
       <div>
         <h1 className="font-bold">Types</h1>
         <div className="flex flex-col gap-[5px] pl-[10px] pt-[10px]">
-          <div className="flex gap-[10px] items-center">
+          <form action="">
+            <input type="radio" value="ALL" />{" "}
+            <label htmlForfor="all">All</label>
+            <br />
+            <input type="radio" value="INCOME" />{" "}
+            <label htmlForfor="income">Income</label>
+            <br />
+            <input type="radio" value="EXPENSE" />{" "}
+            <label htmlForfor="expense">Expense</label>
+            <br />
+          </form>
+          {/* <div className="flex gap-[10px] items-center">
             <div className="form-control">
               <label className="label cursor-pointer">
                 <input
@@ -28,8 +39,8 @@ export const Records = () => {
               </label>
             </div>
             <p>All</p>
-          </div>
-          <div className="flex gap-[10px] items-center">
+          </div> */}
+          {/* <div className="flex gap-[10px] items-center">
             <div className="form-control">
               <label className="label cursor-pointer">
                 <input
@@ -50,7 +61,7 @@ export const Records = () => {
               </label>
             </div>
             <p>Expense</p>
-          </div>
+          </div> */}
         </div>
       </div>
       <div>
@@ -81,6 +92,13 @@ export const Records = () => {
           </button>
         </div>
         <div className="font-bold pt-[20px]">Amount Range</div>
+
+        {/* <form action="/action_page.php">
+          <label for="vol">Volume (between 0 and 50):</label>
+          <input type="range" id="vol" name="vol" min="0" max="50">
+          <input type="submit">
+        </form> */}
+
         <div className="w-full flex gap-[40px] pt-[20px] pb-[20px]">
           <input
             type="number"
