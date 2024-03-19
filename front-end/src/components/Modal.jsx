@@ -78,6 +78,9 @@ export const AddRecord = () => {
   );
 };
 
+
+
+
 /* <div className="modal" role="dialog">
   <div className="modal-box min-w-[700px]">
     <div className="modal-action absolute right-4 top-0">
