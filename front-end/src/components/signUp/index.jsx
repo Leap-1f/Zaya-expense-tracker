@@ -4,8 +4,8 @@ import Link from "next/link";
 
 export const SignUp = () => {
   return (
-    <div className="flex *:w-1/2 *:h-[100vh]">
-      <div className="bg-white flex justify-center items-center">
+    <div className="flex lg: *:w-1/2 *:h-[100vh] w-[100vw] justify-center items-center">
+      <div className="bg-white lg:flex justify-center items-center pt-[100px]">
         <div className="flex flex-col items-center gap-[40px] w-[384px]">
           <Geld width="94" heigth="36"></Geld>
           <div className="*:text-center">
@@ -38,9 +38,11 @@ export const SignUp = () => {
               className="input input-bordered bg-slate-200"
               name="rePassword"
             />
-            <button type="submit" className="btn btn-primary">
-              Sign up
-            </button>
+            <Link href="/dashboard">
+              <button type="submit" className="btn btn-primary w-full">
+                Sign up
+              </button>
+            </Link>
           </div>
           <div>
             <p>
@@ -52,7 +54,7 @@ export const SignUp = () => {
           </div>
         </div>
       </div>
-      <div className="bg-blue-800"></div>
+      <div className="bg-blue-800 lg:flex hidden"></div>
     </div>
   );
 };
@@ -63,7 +65,6 @@ export const SignUp = () => {
 // import { StepOne, StepTwo, StepThree, Stepper } from "../stepper/index";
 // import { Context } from "../utils/context";
 // import { PreviousButton } from "../utils/iconSvg";
-
 
 // export const Steps = () => {
 //   const { isLoading, startLoading, signUpUserInfo } = useContext(Context);
