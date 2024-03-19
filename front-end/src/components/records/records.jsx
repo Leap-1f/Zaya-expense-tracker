@@ -19,77 +19,47 @@ export const Records = () => {
         <h1 className="font-bold">Types</h1>
         <div className="flex flex-col gap-[5px] pl-[10px] pt-[10px]">
           <form action="">
-            <input type="radio" value="ALL" />{" "}
+            <input type="checkbox" value="ALL" />{" "}
             <label htmlForfor="all">All</label>
             <br />
-            <input type="radio" value="INCOME" />{" "}
+            <input type="checkbox" value="INCOME" />{" "}
             <label htmlForfor="income">Income</label>
             <br />
-            <input type="radio" value="EXPENSE" />{" "}
+            <input type="checkbox" value="EXPENSE" />{" "}
             <label htmlForfor="expense">Expense</label>
             <br />
           </form>
-          {/* <div className="flex gap-[10px] items-center">
-            <div className="form-control">
-              <label className="label cursor-pointer">
-                <input
-                  type="checkbox"
-                  className="checkbox checkbox-primary rounded-full"
-                />
-              </label>
-            </div>
-            <p>All</p>
-          </div> */}
-          {/* <div className="flex gap-[10px] items-center">
-            <div className="form-control">
-              <label className="label cursor-pointer">
-                <input
-                  type="checkbox"
-                  className="checkbox checkbox-primary rounded-full"
-                />
-              </label>
-            </div>
-            <p>Income</p>
-          </div>
-          <div className="flex gap-[10px] items-center">
-            <div className="form-control">
-              <label className="label cursor-pointer">
-                <input
-                  type="checkbox"
-                  className="checkbox checkbox-primary rounded-full"
-                />
-              </label>
-            </div>
-            <p>Expense</p>
-          </div> */}
         </div>
       </div>
       <div>
         <h2 className="font-bold">Category</h2>
         <div className="flex flex-col gap-[10px] pl-[10px] pt-[10px]">
-          <div className="flex gap-[10px] items-center">
+          <button className="flex gap-[10px] items-center">
             <Eye />
             <p>Food & Drinks</p>
-          </div>
-          <div className="flex gap-[10px] items-center">
+          </button>
+          <button className="flex gap-[10px] items-center">
             <Eye />
             <p>Shopping</p>
-          </div>
-          <div className="flex gap-[10px] items-center">
+          </button>
+          <button className="flex gap-[10px] items-center">
             <Eye />
             <p>Housing</p>
-          </div>
-          <div className="flex gap-[10px] items-center">
+          </button>
+          <button className="flex gap-[10px] items-center">
             <Eye />
             <p>Transportation</p>
-          </div>
-          <div className="flex gap-[10px] items-center">
+          </button>
+          <button className="flex gap-[10px] items-center">
             <Eye />
             <p>Vehicle</p>
-          </div>
-          <button htmlFor="my_modal_6" className="w-full text-start">
-            + Add Category
           </button>
+          <label
+            htmlFor="my_modal_5"
+            className="btn btn-primary btn-sm rounded-full"
+          >
+            Add Category
+          </label>
         </div>
         <div className="font-bold pt-[20px]">Amount Range</div>
 
