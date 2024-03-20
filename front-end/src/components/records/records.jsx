@@ -62,11 +62,13 @@ export const Records = () => {
           </label>
         </div>
         <div className="font-bold pt-[20px]">Amount Range</div>
-        <form action="" className="flex flex-col">
-          <label htmlFor="vol">Volume</label>
-          <input type="range" id="vol" name="vol" min="0" max="50" />
-          <input type="submit" />
-        </form>
+        <div>
+          <form action="" className="flex flex-col">
+            <label htmlFor="vol">Volume</label>
+            <input type="range" id="vol" name="vol" min="0" max="50" />
+            <input type="submit" />
+          </form>
+        </div>
 
         {/* <div className="w-full flex gap-[40px] pt-[20px] pb-[20px]">
           <input
