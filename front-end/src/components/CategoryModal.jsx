@@ -1,7 +1,7 @@
 export const AddCategory = () => {
   return (
     <div className="modal" role="dialog">
-      <div className="modal-box min-w-[494px]">
+      <div className="modal-box min-w-[792px] h-fit">
         <form method="dialog">
           <label
             htmlFor="my_modal_5"
@@ -10,10 +10,22 @@ export const AddCategory = () => {
             ✕
           </label>
         </form>
+        <h3 className="font-bold text-lg">Add Record</h3>
+        <div className="*:w-1/2 flex">
+          <div className="p-[24px] flex flex-col gap-[20px]">
+            <div className="relative w-[full] h-10">
+              <div className="bg-[#e4e4e4] w-full h-full rounded-full"></div>
+              <div className="absolute top-0 left-0 z-1 w-full h-full"></div>
+            </div>
 
-        <h3 className="font-bold text-lg">Add Category</h3>
-
-        <div className="modal-action"></div>
+            <div className="">
+              <div className="input input-bordered flex flex-col p-1 h-auto gap-2 bg-slate-200">
+                <label className="text-gray-700">Amount</label>
+                <input className="" type="text" placeholder="₮ 0.00" />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

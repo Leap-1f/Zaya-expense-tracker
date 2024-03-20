@@ -62,14 +62,13 @@ export const Records = () => {
           </label>
         </div>
         <div className="font-bold pt-[20px]">Amount Range</div>
+        <form action="" className="flex flex-col">
+          <label htmlFor="vol">Volume</label>
+          <input type="range" id="vol" name="vol" min="0" max="50" />
+          <input type="submit" />
+        </form>
 
-        {/* <form action="/action_page.php">
-          <label for="vol">Volume (between 0 and 50):</label>
-          <input type="range" id="vol" name="vol" min="0" max="50">
-          <input type="submit">
-        </form> */}
-
-        <div className="w-full flex gap-[40px] pt-[20px] pb-[20px]">
+        {/* <div className="w-full flex gap-[40px] pt-[20px] pb-[20px]">
           <input
             type="number"
             placeholder="0"
@@ -87,7 +86,7 @@ export const Records = () => {
           max="100"
           value="60"
           className="range range-primary"
-        />
+        /> */}
       </div>
     </div>
   );
