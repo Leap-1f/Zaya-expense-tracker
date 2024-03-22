@@ -78,10 +78,10 @@ export const AddRecord = () => {
                 </summary>
                 <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-full">
                   <li>
-                    <a>
+                    <label htmlFor="my_modal_7" className="btn flex justify-start">
                       <PlusCircle />
                       Add Category
-                    </a>
+                    </label>
                   </li>
                 </ul>
               </details>
