@@ -6,7 +6,7 @@ export const DayScrollRow = () => {
           id="slide1"
           className="carousel-item relative w-full justify-center"
         >
-          <p>Last 3 days</p>
+          <p>Last day</p>
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a className="btn btn-circle">❮</a>
             <a href="#slide2" className="btn btn-circle">
@@ -18,7 +18,7 @@ export const DayScrollRow = () => {
           id="slide2"
           className="carousel-item relative w-full justify-center"
         >
-          <p>Last 7 days</p>
+          <p>Last weeks</p>
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide1" className="btn btn-circle">
               ❮
@@ -32,7 +32,7 @@ export const DayScrollRow = () => {
           id="slide3"
           className="carousel-item relative w-full justify-center"
         >
-          <p>Last 30 days</p>
+          <p>Last months</p>
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide2" className="btn btn-circle">
               ❮

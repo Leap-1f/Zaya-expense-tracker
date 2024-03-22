@@ -4,12 +4,12 @@ export const Records = () => {
   return (
     <div className="w-[282px] h-fit flex flex-col gap-[24px] bg-white rounded-xl p-[20px] items-start">
       <p className="font-bold text-[24px]">Records</p>
-      <button
+      <label
         htmlFor="my_modal_6"
-        className="btn btn-primary w-full btn-sm rounded-full"
+        className="btn btn-primary btn-sm rounded-full"
       >
         + Add
-      </button>
+      </label>
       <input
         type="text"
         placeholder="search"
@@ -54,10 +54,7 @@ export const Records = () => {
             <Eye />
             <p>Vehicle</p>
           </button>
-          <label
-            htmlFor="my_modal_5"
-            className="btn btn-primary btn-sm rounded-full"
-          >
+          <label htmlFor="my_modal_5" className="btn">
             Add Category
           </label>
         </div>
@@ -71,26 +68,6 @@ export const Records = () => {
             </form>
           </div>
         </div>
-
-        {/* <div className="w-full flex gap-[40px] pt-[20px] pb-[20px]">
-          <input
-            type="number"
-            placeholder="0"
-            className="h-[35px] w-[100px] bg-slate-100 border-2 rounded-md px-[10px]"
-          />
-          <input
-            type="number"
-            placeholder="100"
-            className="h-[35px] w-[100px] bg-slate-100 border-2 rounded-md px-[10px]"
-          />
-        </div>
-        <input
-          type="range"
-          min={0}
-          max="100"
-          value="60"
-          className="range range-primary"
-        /> */}
       </div>
     </div>
   );

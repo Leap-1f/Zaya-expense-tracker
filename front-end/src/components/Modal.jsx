@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { ArrowDropDown, PlusCircle } from "./utils/iconSvg";
 export const AddRecord = () => {
   const [toggle, setToggle] = useState("expense");
 
@@ -17,7 +18,7 @@ export const AddRecord = () => {
           </label>
         </form>
         <h3 className="font-bold text-lg">Add Record</h3>
-        <div className="*:w-1/2 flex">
+        <div className="*:w-1/2 flex border-t-2">
           <div className="p-[24px] flex flex-col gap-[20px]">
             <div className="relative w-[full] h-10">
               <div className="bg-[#e4e4e4] w-full h-full rounded-full"></div>
@@ -64,12 +65,63 @@ export const AddRecord = () => {
                 </div>
               </div>
             </div>
-
-            <div className="">
-              <div className="input input-bordered flex flex-col p-1 h-auto gap-2 bg-slate-200">
-                <label className="text-gray-700">Amount</label>
-                <input className="" type="text" placeholder="₮ 0.00" />
+            <div className="input input-bordered flex flex-col p-1 h-auto gap-2 bg-slate-200">
+              <label className="text-gray-700">Amount</label>
+              <input className="" type="number" placeholder="₮ 0.00" />
+            </div>
+            <div className="flex flex-col">
+              <label className="text-gray-700">Category</label>
+              <details className="dropdown">
+                <summary className="flex justify-between btn bg-slate-200 text-slate-400 w-full input-bordered">
+                  Choose
+                  <ArrowDropDown />
+                </summary>
+                <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-full">
+                  <li>
+                    <a>
+                      <PlusCircle />
+                      Add Category
+                    </a>
+                  </li>
+                </ul>
+              </details>
+            </div>
+            <div className="flex justify-between">
+              <div className="flex flex-col">
+                <label className="text-gray-700">Date</label>
+                <input
+                  type="date"
+                  className="flex justify-end btn bg-slate-200 text-slate-400 w-[150px] input-bordered"
+                ></input>
               </div>
+              <div className="flex flex-col">
+                <label className="text-gray-700">Date</label>
+                <input
+                  type="time"
+                  className="flex justify-end btn bg-slate-200 text-slate-400 w-[150px] input-bordered"
+                ></input>
+              </div>
+            </div>
+            <button className="btn btn-active btn-primary rounded-full">
+              Add Record
+            </button>
+          </div>
+          <div className="p-[24px] flex flex-col justify-between">
+            <div className="flex flex-col">
+              <label className="text-gray-700">Payee</label>
+              <input
+                type="text"
+                placeholder="Write here"
+                className="input input-bordered w-full max-w-xs bg-slate-200"
+              />
+            </div>
+            <div className="flex flex-col">
+              <label className="text-gray-700">Payee</label>
+              <input
+                type="text"
+                placeholder="Write here"
+                className="input input-bordered w-full max-w-xs h-[250px] bg-slate-200"
+              />
             </div>
           </div>
         </div>
@@ -77,9 +129,6 @@ export const AddRecord = () => {
     </div>
   );
 };
-
-
-
 
 /* <div className="modal" role="dialog">
   <div className="modal-box min-w-[700px]">
