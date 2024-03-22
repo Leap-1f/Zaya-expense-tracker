@@ -4,7 +4,7 @@ export const AddCategory = () => {
       <div className="modal-box min-w-[792px] h-fit">
         <form method="dialog">
           <label
-            htmlFor="my_modal_5"
+            htmlFor="my_modal_8"
             className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
           >
             ✕

@@ -4,10 +4,7 @@ export const Records = () => {
   return (
     <div className="w-[282px] h-fit flex flex-col gap-[24px] bg-white rounded-xl p-[20px] items-start">
       <p className="font-bold text-[24px]">Records</p>
-      <label
-        htmlFor="my_modal_6"
-        className="btn btn-primary btn-sm rounded-full"
-      >
+      <label htmlFor="my_modal_7" className="btn">
         + Add
       </label>
       <input
@@ -54,9 +51,7 @@ export const Records = () => {
             <Eye />
             <p>Vehicle</p>
           </button>
-          <label htmlFor="my_modal_5" className="btn">
-            Add Category
-          </label>
+          <label htmlFor="my_modal_5">Add Category</label>
         </div>
         <div className="font-bold pt-[20px]">Amount Range</div>
         <div>
