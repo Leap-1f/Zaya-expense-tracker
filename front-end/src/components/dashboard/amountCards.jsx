@@ -5,11 +5,10 @@ import { CashCard } from "./CashCard";
 
 export const AmountCards = () => {
   return (
-    <div className="flex-wrap justify-between lg:flex-row lg:justify-between gap-[20px]">
-
+    <div className="w-full flex justify-between lg:flex-row lg:justify-between gap-[20px]">
       <CashCard />
       <div className="flex flex-col">
-        <div className="w-[386px] h-[56px] bg-white rounded-t-xl flex  items-center px-[24px]">
+        <div className="w-[386px] h-[56px] bg-white rounded-t-xl flex items-center px-[24px]">
           <div className="flex items-center gap-[10px]">
             <EllipseGreen />
             <p>Your Income</p>
@@ -17,7 +16,7 @@ export const AmountCards = () => {
         </div>
         <div className="w-[386px] h-[152px] bg-white rounded-b-xl pt-[10px] pb-[24px] px-[24px] border-t-2 flex flex-col justify-between">
           <div>
-            <div className="font-bold text-[36px]">1,200,000$</div>
+            <div className="font-bold text-[36px]">-1,200,000$</div>
             <p>Your Income Amount</p>
           </div>
           <div className="flex">
