@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-      <div className="bg-slate-100 h-[100vh]">
+      <div className=" bg-slate-100 w-full h-[100vh]">
         <div className="max-w-screen-xl navbar m-auto sm:flex-wrap p-0 pt-[30px]">
           <AmountCards />
           <Charts />
